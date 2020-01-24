@@ -8,7 +8,7 @@ const TextScreen = () => {
 
     return (
         <View>
-            <Text>Ingrese un nombre:</Text>
+            <Text style={styles.text}>Ingrese un nombre:</Text>
             <TextInput
                 style={styles.input}
                 autoCapitalize="none"
@@ -16,7 +16,7 @@ const TextScreen = () => {
                 value={nombre}
                 onChangeText={(nuevoTexto) => { setNombre(nuevoTexto) }}
             />
-            <Text>Mi nombre es: {nombre}</Text>
+            <Text style={styles.text}>Mi nombre es: {nombre}</Text>
             {nombre.length <= 3 && nombre != ''
                 ? <Text>Debe ingresar un nombre de mas de 3 letras</Text>
                 : null}
@@ -29,6 +29,10 @@ const styles = StyleSheet.create({
         margin: 15,
         borderWidth: 1,
         borderColor: 'black'
+        // height: 3
+    },
+    text: {
+        fontSize: 30
     }
 })
 
