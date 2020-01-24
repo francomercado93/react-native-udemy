@@ -10,6 +10,7 @@ const reducer = (state, action) => {
     switch (action.type) {
         case 'increment':
             return { ...state, counter: state.counter + action.payload }
+        // return { counter: state.counter + action.payload } Otra forma porque solo tenemos una sola propiedad 
         case 'decrement':
             return { ...state, counter: state.counter - action.payload }
         default:
