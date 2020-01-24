@@ -17,6 +17,9 @@ const TextScreen = () => {
                 onChangeText={(nuevoTexto) => { setNombre(nuevoTexto) }}
             />
             <Text>Mi nombre es: {nombre}</Text>
+            {nombre.length <= 3 && nombre != ''
+                ? <Text>Debe ingresar un nombre de mas de 3 letras</Text>
+                : null}
         </View>
     )
 }

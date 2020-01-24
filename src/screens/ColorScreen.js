@@ -16,6 +16,7 @@ const ColorScreen = () => {
             />
             <FlatList
                 data={colors}
+                showsVerticalScrollIndicator={false}
                 keyExtractor={color => color}
                 renderItem={({ item }) => {
                     return (

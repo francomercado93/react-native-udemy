@@ -31,7 +31,6 @@ const SquareScreen = () => {
     const [state, dispatch] = useReducer(reducer, { rojo: 0, verde: 0, azul: 0 });
     // destructuracion
     const { rojo, verde, azul } = state;
-    console.log(state);
     return (
         <View>
             <ColorCounter color="Rojo"
