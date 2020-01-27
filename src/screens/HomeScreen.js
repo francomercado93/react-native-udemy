@@ -3,8 +3,8 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 
 const HomeScreen = ({ navigation }) => {
   return (
-    <View>
-      <Text style={styles.text}>Hola mundo!</Text>
+    <View style={styles.parentStyle}>
+      <Text style={styles.text}>App Demo</Text>
       <Button
         title="Component Demo"
         onPress={() => navigation.navigate('Components')}
@@ -44,7 +44,12 @@ const HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   text: {
     fontSize: 30
-  }
+  },
+  parentStyle: {
+    marginHorizontal: 30,
+    justifyContent: 'space-between',
+    height: 500
+  },
 });
 
 export default HomeScreen;

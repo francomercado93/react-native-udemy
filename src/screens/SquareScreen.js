@@ -47,7 +47,7 @@ const SquareScreen = () => {
                 onDecrease={() => dispatch({ type: 'change_verde', payload: -1 * COLOR_INCREMENT })}
             />
             <View style={{
-                height: 200, width: 200, backgroundColor: `rgb(${rojo}, ${verde}, ${azul})`
+                height: 200, width: 200, backgroundColor: `rgb(${rojo}, ${verde}, ${azul})`, alignSelf: 'center', bottom: 10
             }}></View>
         </View>
     )
